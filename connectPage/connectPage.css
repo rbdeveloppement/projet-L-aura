@@ -1,0 +1,13 @@
+#bg-site{
+    background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(252,190,126,1) 0%, rgba(255,882,203,1) 87%);}
+  /* header */
+  
+  .logo{
+   width: 150px;
+  height: 150px;
+  }
+  #panier{
+    height: 40px;
+    width: 40px;
+  }
+  
