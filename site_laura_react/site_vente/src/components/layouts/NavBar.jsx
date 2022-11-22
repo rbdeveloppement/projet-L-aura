@@ -49,10 +49,12 @@ const NavBar = () => {
                             </div>
 
                         </ul>
+                      
                         <form className="d-flex" role="search">
-                            <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                            <button className="btn btn-outlinkne-success" type="submit">Search</button>
+                            <input className="form-control me-2" type="search" placeholder="..." aria-label="Search" />
+                            <button className="btn btn-outlinkne-success" type="submit">Recherher</button>
                         </form>
+                        <div className="d-flex justify-content-center"><Link to="lienConnexion">connexion</Link></div>
                     </div>
                 </div>
             </nav>

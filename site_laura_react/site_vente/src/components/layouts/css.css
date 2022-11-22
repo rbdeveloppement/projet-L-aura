@@ -14,6 +14,9 @@
   /* footer */
   #footer{
     padding-top: 10px;
+    width: 900px;
+    margin: auto;
+    
   }
   .pas_de_porte{
     width: 90px;
@@ -57,3 +60,25 @@
   #cart{
     font-size: 35px;
   }
+
+
+
+  /* footer */
+  .logoFooter{
+  width: 150px; height: 150px;
+}.map-responsive {
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:auto;
+    height:0;
+   }
+   .map-responsive iframe {
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+   }
+   .backgroundFooter{
+    background-color: E0E0E0;
+   }
