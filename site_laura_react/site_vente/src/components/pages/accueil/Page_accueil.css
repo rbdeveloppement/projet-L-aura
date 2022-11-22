@@ -1,0 +1,14 @@
+.carousel-inner img{
+ width: 25em;
+    height: 30em;
+    object-fit: fill;
+    object-position: center;
+     text-align: center;
+  }
+  #carousel{
+    max-height: 150px;
+    width: auto;
+}
+.carousel-inner{
+     text-align: -webkit-center;
+}

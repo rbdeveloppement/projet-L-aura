@@ -1,0 +1,59 @@
+#bg-site{
+    background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(252,190,126,1) 0%, rgba(255,882,203,1) 87%);}
+  /* header */
+  
+  .logo{
+   width: 150px;
+  height: 150px;
+  }
+  #panier{
+    height: 40px;
+    width: 40px;
+  }
+
+  /* footer */
+  #footer{
+    padding-top: 10px;
+  }
+  .pas_de_porte{
+    width: 90px;
+  }
+  .grid-container {
+      display: grid;
+      justify-content: center;
+      grid-template-columns: auto auto auto auto;
+      gap: 50px;
+      background-color: white;
+   }
+    
+    .grid-container > div {
+      background-color: white;
+      text-align: center;
+      
+      font-size: 15px;
+      height: auto;
+    }
+   
+    .fa-brands{
+    height: 20px;
+    }
+    #lien{
+      text-align: center;
+    
+    }
+  #lien {
+  font-size: 40px;
+  }
+  
+ 
+  
+  
+  #tab-login, #signIn{
+    background-color: gray;
+  }
+  #cardCategory{
+    width: 18 rem;
+  }
+  #cart{
+    font-size: 35px;
+  }
