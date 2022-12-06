@@ -18,9 +18,7 @@
     margin: auto;
     
   }
-  .pas_de_porte{
-    width: 90px;
-  }
+ 
   .grid-container {
       display: grid;
       justify-content: center;
@@ -58,7 +56,7 @@
     width: 18 rem;
   }
   #cart{
-    font-size: 35px;
+    font-size: 20px;
   }
 
 
@@ -66,7 +64,8 @@
   /* footer */
   .logoFooter{
   width: 150px; height: 150px;
-}.map-responsive {
+}
+.map-responsive {
     overflow:hidden;
     padding-bottom:56.25%;
     position:auto;
@@ -80,5 +79,5 @@
     position:absolute;
    }
    .backgroundFooter{
-    background-color: E0E0E0;
+    background-color: E9E9E9;
    }

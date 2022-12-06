@@ -4,7 +4,7 @@ import "../accueil/Page_accueil.css";
 const Page_accueil = () => {
     return (
         <div>
-            <h2 className="new d-flex justify-content-center">Nouveautés</h2>
+            <h2 className="new d-flex justify-content-center">Bienvenue sur le site L'Aura</h2>
 
             <div className="container-fluid m-auto ">
                 <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">

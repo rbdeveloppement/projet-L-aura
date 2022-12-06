@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./css.css";
 
 
@@ -8,7 +8,7 @@ const NavBar = () => {
         <div>
             <nav className="navbar navbar-expand-lg bg-light">
                 <div className="container">
-                    <Link className="navbar-brand" to="#">L'Aura</Link>
+                    <div className="navbar-brand">L'Aura</div>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                         aria-label="Toggle navigation">
@@ -17,10 +17,10 @@ const NavBar = () => {
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                             <div className="nav-item">
-                                <Link className="nav-link active" to="./site_vente.html">Accueil</Link>
+                                <Link className="nav-link active" to="/">Accueil</Link>
                             </div>
                             <div className="nav-item">
-                                <Link className="nav-link" to="#">Boutique</Link>
+                                <Link className="nav-link" to="/Boutique">Boutique</Link>
                             </div>
                             <div className="nav-item dropdown">
                                 <Link className="nav-link dropdown-toggle" to="pagePretAPorter" role="button" data-bs-toggle="dropdown"
@@ -28,10 +28,10 @@ const NavBar = () => {
                                     Prêt à porter
                                 </Link>
                                 <ul className="dropdown-menu">
-                                    <Link className="dropdown-item" to="#">Haut</Link>
-                                    <Link className="dropdown-item" to="#">Bas</Link>
-                                    <Link className="dropdown-item" to="#">Jupes et Robes</Link>
-                                    <Link className="dropdown-item" to="#">Manteau et Vestes</Link>
+                                    <Link className="dropdown-item" to="/Hauts">Haut</Link>
+                                    <Link className="dropdown-item" to="/Bas">Bas</Link>
+                                    <Link className="dropdown-item" to="/Jupes">Jupes et Robes</Link>
+                                    <Link className="dropdown-item" to="/Manteaux">Manteau et Vestes</Link>
                                 </ul>
                             </div>
                             <div className="nav-item dropdown">
@@ -40,8 +40,21 @@ const NavBar = () => {
                                     Cosmétiques
                                 </Link>
                                 <ul className="dropdown-menu">
-                                    <Link className="dropdown-item" to="#">Corps</Link>
-                                    <Link className="dropdown-item" to="#">Visage</Link>
+                                    <Link className="dropdown-item" to="/Corps">Corps</Link>
+                                    <Link className="dropdown-item" to="/Visage">Visage</Link>
+                                </ul>
+                            </div>
+                            <div className="nav-item dropdown">
+                                <Link className="nav-link dropdown-toggle" to="pagePretAPorter" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Accessoires
+                                </Link>
+                                <ul className="dropdown-menu">
+                                    <Link className="dropdown-item" to="/Bijoux">Bijoux</Link>
+                                    <Link className="dropdown-item" to="/Ceintures">Ceintures</Link>
+                                    <Link className="dropdown-item" to="/Sacs">Sacs</Link>
+                                    <Link className="dropdown-item" to="/Chaussures">Chaussures</Link>
+                                    <Link className="dropdown-item" to="/Echarpes">Echarpes</Link>
                                 </ul>
                             </div>
                             <div className="nav-item">
@@ -52,9 +65,9 @@ const NavBar = () => {
                       
                         <form className="d-flex" role="search">
                             <input className="form-control me-2" type="search" placeholder="..." aria-label="Search" />
-                            <button className="btn btn-outlinkne-success" type="submit">Recherher</button>
+                            <button className="btn btn-outlinkne-success" type="submit">Rechercher</button>
                         </form>
-                        <div className="d-flex justify-content-center"><Link to="lienConnexion">connexion</Link></div>
+                        <div className="d-flex justify-content-center"><Link to="/Connexion">connexion</Link></div>
                     </div>
                 </div>
             </nav>

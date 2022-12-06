@@ -9,13 +9,8 @@ import { FaTiktok } from 'react-icons/fa';
 const Footer = () => {
     return (
         <footer className="backgroundFooter text-center text-lg-start text-dark">
-
             <div className="container mt-5 p-4">
-
                 <div className="row my-4">
-
-
-
                     <div className="col-sm">
                         <h3>S'y rendre</h3>
                         <div className="">
@@ -24,7 +19,7 @@ const Footer = () => {
 
                             </ul>
                             <div className="maps-responsive">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2552.0986447022597!2d3.319445215890238!3d50.23406201081378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c2be1480cf519f%3A0xb33d915de38ee6b1!2s58%20Rue%20du%20Mar%C3%A9chal%20Foch%2C%2059141%20Iwuy!5e0!3m2!1sfr!2sfr!4v1669113477072!5m2!1sfr!2sfr" width="auto" height="auto"  allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2552.0986447022597!2d3.319445215890238!3d50.23406201081378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c2be1480cf519f%3A0xb33d915de38ee6b1!2s58%20Rue%20du%20Mar%C3%A9chal%20Foch%2C%2059141%20Iwuy!5e0!3m2!1sfr!2sfr!4v1669113477072!5m2!1sfr!2sfr" width="auto" height="auto" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
                             </div>
                         </div>
                     </div>
@@ -39,7 +34,6 @@ const Footer = () => {
                             <p>Samedi : 10h-13h / 15h-18h</p>
                         </div>
                     </div>
-
                     <div className="info col-sm">
                         <h3>Information</h3>
                         <ul>
@@ -54,7 +48,7 @@ const Footer = () => {
                                 </Link>
                             </li>
                             <li>
-                                <Link to="./contact.html" className="">
+                                <Link to="/Contact" className="">
                                     Nous contacter
                                 </Link>
                             </li>
@@ -66,28 +60,20 @@ const Footer = () => {
                             </li>
                         </ul>
                     </div>
-
                 </div>
-
             </div>
             <div id="lien">
                 <h4>Nous suivre sur les reseaux</h4>
-                <Link to="https://www.instagram.com/laura_concept_store/?hl=fr"><BsInstagram /></Link>
-                <Link to="https://www.facebook.com/lauraconceptstore"><BsFacebook /></Link>
-                <Link to="http://@l_aura_concept_store"><FaTiktok /></Link>
-
+                <a href="https://www.instagram.com/laura_concept_store/?hl=fr"><BsInstagram /></a>
+            <a href="https://www.facebook.com/lauraconceptstore"><BsFacebook /></a>
+            <a href="http://@l_aura_concept_store"><FaTiktok /></a>
+            <i className="fa-brands fa-snapchat"></i>
             </div>
-
-
             <div className="text-center p-3">
-                © 202 Copyright:
+                © 2022 Copyright:
                 Bernier Rémi
             </div>
-
         </footer>
-
-
-
     );
 };
 
