@@ -22,16 +22,24 @@ import Manteaux from './components/pages/Pret_A_Porter/manteau/Manteaux';
 import Bas from './components/pages/Pret_A_Porter/bas/Bas';
 import Hauts from './components/pages/Pret_A_Porter/hauts/Hauts';
 import Paiement from './components/pages/paiement/Paiement';
-import PageBas from './components/pages/Pret_A_Porter/bas/PageBas';
+import PageBas from './components/pages/Pret_A_Porter/bas/Bas';
 import PageHauts from './components/pages/Pret_A_Porter/hauts/PageHaut';
 import PageJupes from './components/pages/Pret_A_Porter/jupes/PageJupes';
 import PageManteaux from './components/pages/Pret_A_Porter/manteau/PageManteaux';
 import Contact from './components/pages/contact/Contact';
+import Panier from './components/pages/panier/Panier';
+import { useEffect, useState } from 'react';
 
 
 
 function App() {
-  
+  const [ text , setText ] = useState ( "" );
+useEffect (() => {
+fetch ( 'http://boutique-laura/' )
+. then ( response => response . text ())
+. then ( content => setText ( content ));
+}, [])
+
   return (
  <BrowserRouter>
  <Routes>
@@ -53,12 +61,13 @@ function App() {
       <Route path='Hauts' element={<Hauts/>}/>
       <Route path='Bas' element={<Bas/>}/>
       <Route path='Connexion' element={<Connexion/>}/>
-      <Route path='PageBas' element={<PageBas/>}/>
+      <Route path='Bas' element={<PageBas/>}/>
       <Route path='PageHauts' element={<PageHauts/>}/>
       <Route path='PageJupes' element={<PageJupes/>}/>
       <Route path='PageManteaux' element={<PageManteaux/>}/>
       <Route path='Paiement' element={<Paiement/>}/>
       <Route path='Contact' element={<Contact/>}/>
+      <Route path='Panier' element={<Panier/>}/>
       <Route path='*' element={<h1>page non trouvée</h1>}/>
   </Route>v
  </Routes>

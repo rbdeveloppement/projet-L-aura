@@ -78,7 +78,7 @@ const Paiement = () => {
                                                     <div className="col text-right"><b>$ 46.98</b></div>
                                                 </div>
                                                 <div className="row lower">
-                                                    <div className="col text-left"><Link to="#"><u>Add promo code</u></Link></div>
+                                                    <div className="col text-left"><Link to="#"><u>Ajouter un code promo</u></Link></div>
                                                 </div>
                                                 <button className="btn">Place order</button>
                                                 <p className="text-muted text-center">Complimentary Shipping & Returns</p>

@@ -1,6 +1,7 @@
 import React from 'react';
 import "./css.css";
 import { FaShoppingCart } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 
 const Header = () => {
@@ -12,7 +13,7 @@ const Header = () => {
                     <h2 className="text-center">L'Aura Concept Store</h2>
                 </div>
                 <div className="d-flex justify-content-center">
-                <button id="cart" to="https://www.instagram.com/laura_concept_store/?hl=fr"><FaShoppingCart/></button>
+                <Link id="cart"  to="/Panier"><FaShoppingCart/></Link>
                 </div>
             
             </div>

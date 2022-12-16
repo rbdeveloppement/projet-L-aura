@@ -12,11 +12,13 @@ const Bas = ({title, price, imageId, addToCart}) => {
   }
 
     return (
+      <>
+      <h1 className='titlePage' >Nos bas</h1>
         <div className='mt-3'>
               <div className="card">
         <img
           src={"https://picsum.photos/id/" + imageId + "/600/400"}
-          classname="card-img-top"
+          className="card-img-top"
           alt={title}/>
         <div className="card-body">
           <h5 className="card-title">{title}</h5>
@@ -25,6 +27,7 @@ const Bas = ({title, price, imageId, addToCart}) => {
         </div>
       </div>
         </div>
+        </>
     );
 };
 

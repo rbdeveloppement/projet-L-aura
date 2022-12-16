@@ -13,7 +13,7 @@ import {
 }
 from 'mdb-react-ui-kit';
 import "./Connexion.css";
-function App() {
+function Connexion() {
 
   const [justifyActive, setJustifyActive] = useState('tab1');;
 
@@ -30,12 +30,12 @@ function App() {
 
       <MDBTabs pills justify className='mb-3 d-flex flex-row justify-content-between'>
         <MDBTabsItem>
-          <MDBTabsLink onClick={() => handleJustifyClick('tab1')} active={justifyActive === 'tab1'}>
+          <MDBTabsLink className='bouton' onClick={() => handleJustifyClick('tab1')} active={justifyActive === 'tab1'}>
             Connexion
           </MDBTabsLink>
         </MDBTabsItem>
         <MDBTabsItem>
-          <MDBTabsLink onClick={() => handleJustifyClick('tab2')} active={justifyActive === 'tab2'}>
+          <MDBTabsLink className='bouton' onClick={() => handleJustifyClick('tab2')} active={justifyActive === 'tab2'}>
             S'enregistrer
           </MDBTabsLink>
         </MDBTabsItem>
@@ -54,7 +54,7 @@ function App() {
           </div>
 
           <MDBBtn  className="bouton mb-4 w-100">Connexion</MDBBtn>
-          <p className="text-center">Pas encore de compte? <a href="#!">S'enregistrer</a></p>
+         
 
         </MDBTabsPane>
 
@@ -69,7 +69,7 @@ function App() {
             <MDBCheckbox name='flexCheck' id='flexCheckDefault' label="j'ai lu et accepte les conditions d'utilsations" />
           </div>
 
-          <MDBBtn className="bouton mb-4 w-100">Enregistrer</MDBBtn>
+          <MDBBtn className="bouton">Enregistrer</MDBBtn>
 
         </MDBTabsPane>
 
@@ -79,4 +79,4 @@ function App() {
   );
 }
 
-export default App;
+export default Connexion;
